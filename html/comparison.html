@@ -181,8 +181,8 @@
             <div class = "row task2">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8 task1">
-                    <h3 id = "ptHeading"> Observations: </h3>
-                    <p> From the above results obtained by running given sets of points on both the Convex Hull Algorithms, 
+                    <h3 id = "ptHeading"><u>Observations:</u>  </h3>
+                    <p> <br>From the above results obtained by running given sets of points on both the Convex Hull Algorithms, 
                         we can see that the Jarvis March algorithm outperforms the Kirkpatrick-Seidel algorithm significantly
                         in all cases. This could be attributed to the fact that the value of 'n', or number of points in the 
                         point set we have considered is quite small. However, for large datasets, it is quite likely that the
@@ -219,8 +219,109 @@
                         O(h(n-1)) = O(hn) 
                     </p>
                 </div>
+            </div><br><br>
+
+            <div class = "row task2">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 task1">
+                    <h2> <u>Comparison of Time Elapsed in Computation of Convex Hull </u></h2>
+                </div>
             </div>
 
+            <div class = "row">
+                <div class="write-up">
+                    <h2 class = "algos">Jarvis March</h2><br>
+                    <table style="text-align: center; margin:0 auto; background-color: transparent;">
+                        <tr>
+                            <th style="color: white; padding-right: 20px;"><h4>Number of input points</h4></th>
+                            <th style="color: white; padding-left: 20px;"><h4>Elapsed Time</h4></th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">10</th>
+                            <th style="color: white; padding-left: 20px;">0.3626999855041504 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">20</th>
+                            <th style="color: white; padding-left: 20px;">0.3461000919342041 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">50</th>
+                            <th style="color: white; padding-left: 20px;">0.3661000728607178 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">100</th>
+                            <th style="color: white; padding-left: 20px;">0.5730001926422119 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">500</th>
+                            <th style="color: white; padding-left: 20px;">0.4872000217437744 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">1000</th>
+                            <th style="color: white; padding-left: 20px;">1.3842999935150146 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">3000</th>
+                            <th style="color: white; padding-left: 20px;">1.181800127029419 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">6000</th>
+                            <th style="color: white; padding-left: 20px;">3.474100112915039 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">10000</th>
+                            <th style="color: white; padding-left: 20px;">3.26170015335083 ms</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="write-up">
+                    <h2 class = "algos">KPS</h2><br>
+                    <table style="text-align: center; margin:0 auto; background-color: transparent;">
+                        <tr>
+                            <th style="color: white; padding-right: 20px;"><h4>Number of input points</h4></th>
+                            <th style="color: white; padding-left: 20px;"><h4>Elapsed Time</h4></th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">10</th>
+                            <th style="color: white; padding-left: 20px;">1.8460001945495605 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">20</th>
+                            <th style="color: white; padding-left: 20px;">2.3369998931884766 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">50</th>
+                            <th style="color: white; padding-left: 20px;">3.132999897003174 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">100</th>
+                            <th style="color: white; padding-left: 20px;">3.9646999835968018 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">500</th>
+                            <th style="color: white; padding-left: 20px;">7.891000032424927 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">1000</th>
+                            <th style="color: white; padding-left: 20px;">13.206400156021118 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">3000</th>
+                            <th style="color: white; padding-left: 20px;">49.752699851989746 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">6000</th>
+                            <th style="color: white; padding-left: 20px;">57.75859999656677 ms</th>
+                        </tr>
+                        <tr>
+                            <th style="color: white; padding-right: 20px;">1000</th>
+                            <th style="color: white; padding-left: 20px;">84.37769985198975 ms</th>
+                        </tr>
+                    </table>
+                </div>
 
+                <div style = "text-align: center;">
+                    <img src="../css/ConvexHullTimeAnalysis.png" alt="Image description" style="max-width: 100%; height: 500px;">
+                </div>
     </body>
 </html>
